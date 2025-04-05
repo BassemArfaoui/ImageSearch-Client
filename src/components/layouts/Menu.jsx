@@ -10,10 +10,10 @@ const Menu = () => {
     <div className=" p-4 h-15 text-white flex items-center justify-between py-8 border-b-2 border-b-gray-400 shadow-md">
       <div className="flex items-center cursor-pointer" onClick={()=>{navigate('/')}}>
         <span className="text-blue-500 mr-2 ml-1">
-          <MdImageSearch className="text-4xl" />
+          <MdImageSearch className="text-3xl" />
         </span>
 
-        <h1 className="text-3xl text-blue-500 font-roboto-mono font-bold" >
+        <h1 className="text-2xl text-blue-500 font-roboto-mono font-bold" >
           Image-Search
         </h1>
       </div>
