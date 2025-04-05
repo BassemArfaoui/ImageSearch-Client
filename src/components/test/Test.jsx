@@ -1,6 +1,7 @@
 import { MdImageSearch } from "react-icons/md";
 
 import React, { useState } from "react";
+import SearchLoader from "../tools/SearchLoader";
 import PageLoader from "../tools/PageLoader";
 
 function Test() {
@@ -8,7 +9,7 @@ function Test() {
 
   return (
    <div>
-      <PageLoader/>
+      <SearchLoader/>
    </div>
   );
 }
