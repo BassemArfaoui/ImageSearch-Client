@@ -3,7 +3,7 @@ import SearchArea from '../components/search/SearchArea'
 
 function SearchPage() {
   return (
-    <div className='pt-10'>
+    <div className='pt-5 md:pt-10'>
         <title>Image-Search : Search</title>
         <SearchArea />
     </div>

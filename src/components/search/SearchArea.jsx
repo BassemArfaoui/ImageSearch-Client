@@ -6,7 +6,7 @@ function SearchArea() {
 
     const [searchQuery, setSearchQuery] = useState("");
   return (
-    <div className="w-full flex justify-center px-4 md:px-8 ">
+    <div className="w-full flex justify-center px-2 md:px-8 ">
       <div className="search-area border-2 bg-white border-gray-500 p-4 w-full rounded-2xl md:w-200 shadow-lg shadow-gray-200">
         <div className="search-box ">
           <input
