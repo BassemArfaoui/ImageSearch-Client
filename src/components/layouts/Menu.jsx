@@ -7,7 +7,7 @@ const Menu = () => {
   const navigate = useNavigate();
 
   return (
-    <div className=" p-4 h-15 text-white flex items-center justify-between py-9 border-b-2 border-b-gray-400 shadow-md">
+    <div className=" p-4 h-15 text-white flex items-center justify-between py-8 border-b-2 border-b-gray-400 shadow-md">
       <div className="flex items-center cursor-pointer" onClick={()=>{navigate('/')}}>
         <span className="text-blue-500 mr-2 ml-1">
           <MdImageSearch className="text-4xl" />
