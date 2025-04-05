@@ -2,7 +2,10 @@ import React from 'react'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div className='mt-8'>
+    <title>Image-Search : Home</title>
+    <div className='text-center'>Home page</div>
+  </div>
   )
 }
 

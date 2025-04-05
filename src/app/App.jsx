@@ -26,7 +26,7 @@ function App() {
             <Suspense fallback={<PageLoader />}>
               <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/favourite" element={<FavouritePage />} />
+                <Route path="/wishlist" element={<FavouritePage />} />
                 <Route path="/search" element={<SearchPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
                 <Route path="/test" element={<Test />} />

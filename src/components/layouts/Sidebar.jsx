@@ -15,7 +15,7 @@ const Sidebar = () => {
   const menuItems = [
     { icon: <FiHome />, label: "Dashboard", path: "/" },
     { icon: <FiSearch />, label: "Search", path: "/search" },
-    { icon: <FiHeart />, label: "Favourite", path: "/favourite" },
+    { icon: <FiHeart />, label: "Favourite", path: "/wishlist" },
     { icon: <FiSettings />, label: "Settings", path: "/settings" },
   ];
 

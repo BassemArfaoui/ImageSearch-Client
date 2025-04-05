@@ -4,7 +4,7 @@ import { MdImageSearch } from "react-icons/md";
 
 export default function SearchLoader() {
     return (
-      <div className="min-h-150 flex flex-col items-center justify-center bg-white" >
+      <div className="min-h-150 flex flex-col items-center justify-center bg-gray-100" >
         <span className="text-blue-500 mr-3 ml-1">
           <MdImageSearch className="text-6xl mb-3" />
         </span>

@@ -1,7 +1,12 @@
 
 function SettingsPage() {
   return (
-    <div>SettingsPage</div>
+    <div className="pt-8">
+        <title>Image-Search : Settings</title>
+
+        <div className="text-center">Settings page</div>
+
+    </div>
   )
 }
 
