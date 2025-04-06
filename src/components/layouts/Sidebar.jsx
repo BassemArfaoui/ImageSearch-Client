@@ -7,15 +7,16 @@ import {
   FiSearch,
 } from "react-icons/fi";
 import { useNavigate, useLocation } from "react-router-dom";
+import TooltipWrapper from "../tools/TooltipWrapper";
 
 const Sidebar = () => {
   const navigate = useNavigate();
-  const location = useLocation(); 
+  const location = useLocation();
 
   const menuItems = [
-    { icon: <FiHome />, label: "Dashboard", path: "/" },
+    { icon: <FiHome />, label: "Home", path: "/" },
     { icon: <FiSearch />, label: "Search", path: "/search" },
-    { icon: <FiHeart />, label: "Favourite", path: "/wishlist" },
+    { icon: <FiHeart />, label: "wishList", path: "/wishlist" },
     { icon: <FiSettings />, label: "Settings", path: "/settings" },
   ];
 
@@ -34,17 +35,19 @@ const Sidebar = () => {
               item.path === "/menu");
 
           return (
-            <div
-              key={index}
-              onClick={() => handleNavigation(item.path)}
-              className={`p-3 cursor-pointer rounded-lg hover:bg-sky-100 ${
-                isActive
-                  ? "text-blue-500  hover:bg-gray-200"
-                  : "text-gray-500  "
-              }`}
-            >
-              {item.icon}
-            </div>
+            <TooltipWrapper tooltip={item.label} placement="right" enterDelay={1500}>
+              <div
+                key={index}
+                onClick={() => handleNavigation(item.path)}
+                className={`p-3 cursor-pointer rounded-lg hover:bg-sky-100 ${
+                  isActive
+                    ? "text-blue-500  hover:bg-gray-200"
+                    : "text-gray-500  "
+                }`}
+              >
+                {item.icon}
+              </div>
+            </TooltipWrapper>
           );
         })}
       </div>
