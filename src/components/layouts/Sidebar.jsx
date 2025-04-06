@@ -25,8 +25,8 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="group relative md:h-full  border-r-2 border-r-gray-400">
-      <div className="h-full bg-white-800 flex gap-2 flex-row justify-evenly md:justify-start md:flex-col items-center md:py-4 py-1 w-full md:w-w-16 ">
+    <div className="group relative md:h-full border-t-1 md:border-t-0  md:border-r-2 border-t-gray-400 md:border-r-gray-400 shadow">
+      <div className="h-full bg-white-800 flex gap-2 flex-row justify-evenly md:justify-start md:flex-col items-center md:py-4 py-1 w-full md:w-16 ">
         {menuItems.map((item, index) => {
           const isActive =
             location.pathname === item.path ||
