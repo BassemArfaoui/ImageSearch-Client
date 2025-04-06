@@ -7,7 +7,7 @@ const Main = ({ children }) => {
     <div className="flex flex-col h-screen">
       <Menu />
 
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-col-reverse md:flex-row flex-1 overflow-hidden">
         <Sidebar />
 
         <div className="flex-1 overflow-y-auto px-3 py-1 md:px-5 bg-gray-100" >
