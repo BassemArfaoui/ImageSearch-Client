@@ -1,15 +1,15 @@
 import { MdImageSearch } from "react-icons/md";
 
-import React, { useState } from "react";
-import SearchLoader from "../tools/SearchLoader";
-import PageLoader from "../tools/PageLoader";
+import React from "react";
+import CardsLoading from "../tools/CardsLoading";
+
 
 function Test() {
 
 
   return (
    <div>
-      <SearchLoader/>
+     <CardsLoading />
    </div>
   );
 }

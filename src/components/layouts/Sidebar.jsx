@@ -35,19 +35,24 @@ const Sidebar = () => {
               item.path === "/menu");
 
           return (
-            <TooltipWrapper tooltip={item.label} placement="right" enterDelay={1500}>
-              <div
-                key={index}
-                onClick={() => handleNavigation(item.path)}
-                className={`p-3 cursor-pointer rounded-lg hover:bg-sky-100 ${
-                  isActive
-                    ? "text-blue-500  hover:bg-gray-200"
-                    : "text-gray-500  "
-                }`}
+            <div     key={index}>
+              <TooltipWrapper
+                tooltip={item.label}
+                placement="right"
+                enterDelay={1500}
               >
-                {item.icon}
-              </div>
-            </TooltipWrapper>
+                <div
+                  onClick={() => handleNavigation(item.path)}
+                  className={`p-3 cursor-pointer rounded-lg hover:bg-sky-100 ${
+                    isActive
+                      ? "text-blue-500  hover:bg-gray-200"
+                      : "text-gray-500  "
+                  }`}
+                >
+                  {item.icon}
+                </div>
+              </TooltipWrapper>
+            </div>
           );
         })}
       </div>
