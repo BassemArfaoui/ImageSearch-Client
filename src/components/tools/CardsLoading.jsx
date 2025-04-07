@@ -1,6 +1,6 @@
 export default function CardsLoading() {
     return (
-      <div className="w-[230px] overflow-hidden rounded-xl border-2 border-gray-400 bg-white shadow-lg transition-all animate-pulse">
+      <div className="w-[205px] overflow-hidden rounded-xl border-2 border-gray-400 bg-white shadow-lg transition-all animate-pulse">
   
         {/* Image Skeleton */}
         <div className="flex pt-3">
