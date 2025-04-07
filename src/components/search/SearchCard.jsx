@@ -46,7 +46,8 @@ export default function ProductCard({
   }
 
   return (
-    <div className="w-[205px] overflow-hidden rounded-xl border-2 border-gray-400 bg-white shadow-lg transition-all ">
+    <div className="w-[210px] overflow-hidden rounded-xl border-2 border-gray-400 bg-white shadow-lg transition-all">
+
       {/* Image Section */}
       <div className=" flex pt-2">
         <div className="relative  justify-center overflow-hidden  flex flex-1 ">
@@ -61,30 +62,28 @@ export default function ProductCard({
       </div>
 
       <div className="flex-1 flex  justify-center items-center gap-3 flex-wrap mt-2 mb-1">
-
           <div className=" rounded-md bg-gray-200/80 px-2 py-0.5 text-xs font-medium text-black backdrop-blur-sm">
             {gender}
           </div>
           <div className=" rounded-md bg-gray-200/80 px-2 py-0.5 text-xs font-medium text-black backdrop-blur-sm">
             {usage}
           </div>
-
       </div>
 
       {/* Content Section */}
-      <div className="p-4">
+      <div className="pt-4 pb-2 px-4">
         <h3 className="mb-1 line-clamp-1 text-base font-bold">
           {productDisplayName}
         </h3>
-        <div className="flex items-center gap-1 text-sm text-muted-foreground">
-          <span>{articleType}</span>
+        <div className="flex items-center  gap-1 text-sm text-muted-foreground">
+          <span className="line-clamp-1">{articleType}</span>
           <span className="text-xs">•</span>
           <span>{baseColour}</span>
         </div>
       </div>
 
       {/* Footer */}
-      <div className="flex items-center justify-between border-t p-3 px-4 pt-2">
+      <div className="flex items-center justify-center flex-col gap-2 border-t p-3 px-4 pt-2 flex-wrap">
         <div className="rounded border px-2 py-0.5 text-xs text-gray-700">
           {masterCategory}
         </div>
@@ -95,6 +94,7 @@ export default function ProductCard({
           </span>
         </div>
       </div>
+
     </div>
   );
 }
