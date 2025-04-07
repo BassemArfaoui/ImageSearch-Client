@@ -46,11 +46,11 @@ export default function ProductCard({
   }
 
   return (
-    <div className="w-[230px] overflow-hidden rounded-xl border-2 border-gray-400 bg-white shadow-lg transition-all ">
+    <div className="w-[205px] overflow-hidden rounded-xl border-2 border-gray-400 bg-white shadow-lg transition-all ">
       {/* Image Section */}
       <div className=" flex pt-2">
         <div className="relative  justify-center overflow-hidden  flex flex-1 ">
-          <div className="flex aspect-[3/3] w-[105px] h-[105px] justify-center mb-3 mt-3 border-2 border-gray-400 p-1.5 rounded-full">
+          <div className="flex aspect-[3/3] w-[85px] h-[85px] justify-center mb-3 mt-3 border-2 border-gray-400 p-1.5 rounded-full">
             <img
               src={`https://res.cloudinary.com/dgsijiupw/image/upload/v1743859091/products/${id}.jpg`}
               alt={productDisplayName}
