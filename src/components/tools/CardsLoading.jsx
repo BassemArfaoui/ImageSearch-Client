@@ -5,7 +5,7 @@ export default function CardsLoading() {
         {/* Image Skeleton */}
         <div className="flex pt-3">
           <div className="relative flex flex-1 justify-center overflow-hidden">
-            <div className="flex aspect-square w-[85px] h-[85px] justify-center mb-3 mt-3 border-2 border-gray-300 p-2 rounded-full bg-gray-200" />
+            <div className="flex aspect-square w-[78px] h-[78px] justify-center mb-3 mt-3 border-2 border-gray-300 p-2 rounded-full bg-gray-200" />
           </div>
         </div>
   
